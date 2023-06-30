@@ -9,7 +9,7 @@
 # Takes many pdf files and merge into one pdf.
 # Files will be merged in the same order as given pdf's
 #
-# Example: 
+# Example:
 # * merge-pdf merged.pdf first.pdf second.pdf
 
-gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile="$1" ${@:1}
+gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile="$1" "${@:1}"
